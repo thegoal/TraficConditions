@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NcG-2T-BSE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Fmz-jk-eYC">
+            <objects>
+                <navigationController id="NcG-2T-BSE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="osw-y1-0Xu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6cU-y2-6Y8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIu-AT-Mi9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1113" y="-51"/>
+        </scene>
+        <!--Cameras LocationVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CamerasLocationVC" customModule="TrafficCondition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tyo-0x-zgf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vJZ-GZ-nQJ"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tyo-0x-zgf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6dc-iG-Anl"/>
+                            <constraint firstItem="Tyo-0x-zgf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a47-E5-6Yv"/>
+                            <constraint firstItem="Tyo-0x-zgf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="doO-7T-0O0"/>
+                            <constraint firstItem="Tyo-0x-zgf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qMv-R2-dQn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dhp-2U-6fx"/>
+                    <connections>
+                        <outlet property="mapView" destination="Tyo-0x-zgf" id="yxV-RD-Efu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-313.04347826086956" y="-52.232142857142854"/>
+        </scene>
+        <!--Camera CaptureVC-->
+        <scene sceneID="Kat-oH-Mqc">
+            <objects>
+                <viewController storyboardIdentifier="CameraCaptureVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3P3-Ft-V8T" customClass="CameraCaptureVC" customModule="TrafficCondition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o9L-np-RRG" customClass="TraficPhotoView" customModule="TrafficCondition" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JZT-nr-rB7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JZT-nr-rB7" firstAttribute="leading" secondItem="wh5-5T-AE6" secondAttribute="leading" id="PGe-9q-Y35"/>
+                            <constraint firstItem="wh5-5T-AE6" firstAttribute="bottom" secondItem="JZT-nr-rB7" secondAttribute="bottom" id="VN7-Gz-ePv"/>
+                            <constraint firstItem="JZT-nr-rB7" firstAttribute="top" secondItem="wh5-5T-AE6" secondAttribute="top" id="Ved-tq-0m8"/>
+                            <constraint firstItem="wh5-5T-AE6" firstAttribute="trailing" secondItem="JZT-nr-rB7" secondAttribute="trailing" id="gWi-tN-U8C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wh5-5T-AE6"/>
+                        <connections>
+                            <outlet property="traficImage" destination="JZT-nr-rB7" id="OcD-OP-clA"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="ble-zX-pRe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u16-Qa-6E6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333.33333333333337" y="-52.232142857142854"/>
+        </scene>
+    </scenes>
+</document>
