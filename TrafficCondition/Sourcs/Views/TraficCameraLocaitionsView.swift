@@ -61,9 +61,12 @@ class TraficCameraLocaitionsView: UIView , MKMapViewDelegate {
             pinView = AnnotationView(annotation: annotation, reuseIdentifier: Constants.AnnotationPinIdentifier);
         }
         
-        pinView.canShowCallout = false ;
+        pinView.canShowCallout = false
         // Index will help getting Trafic object on selection
         pinView.pinIndex = (annotation as! Annotation).index
+        
+        pinView.accessibilityIdentifier =  "identify\(String(describing: pinView.pinIndex))"
+        
         return pinView;
      }
     
