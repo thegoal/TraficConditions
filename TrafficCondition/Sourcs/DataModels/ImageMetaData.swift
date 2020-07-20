@@ -2,7 +2,7 @@
 //  ImageMetaData.swift
 //  TrafficCondition
 //
-//  Created by stella on 7/19/20.
+//  Created by Ishaq on 7/19/20.
 //  Copyright © 2020 Ishaq. All rights reserved.
 //
 
@@ -15,7 +15,6 @@ class ImageMetadata : NSObject, NSCoding, Mappable{
     var height : Int?
     var md5 : String?
     var width : Int?
-
 
     class func newInstance(map: Map) -> Mappable?{
         return ImageMetadata()

@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-1113" y="-51"/>
         </scene>
-        <!--Cameras LocationVC-->
+        <!--Trafic Cameras LocationVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CamerasLocationVC" customModule="TrafficCondition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TraficCamerasLocationVC" customModule="TrafficCondition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="TraficCameraLocaitionsView" customModule="TrafficCondition" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,22 +51,29 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="dhp-2U-6fx">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="biZ-M7-sMP">
-                            <connections>
-                                <action selector="refreshTraficCameraLoactions" destination="BYZ-38-t0r" id="JcS-6F-bg0"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="refresh" id="biZ-M7-sMP">
+                                <connections>
+                                    <action selector="refreshTraficCameraLoactions" destination="8bC-Xf-vdC" id="SkT-fa-75c"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="calendar" style="plain" id="aLh-r1-0Jf">
+                                <connections>
+                                    <action selector="showDatePicker" destination="8bC-Xf-vdC" id="gGA-NR-WqN"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-313.04347826086956" y="-52.232142857142854"/>
         </scene>
-        <!--Camera CaptureVC-->
+        <!--Trafic Camera PhotoVC-->
         <scene sceneID="Kat-oH-Mqc">
             <objects>
-                <viewController storyboardIdentifier="CameraCaptureVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3P3-Ft-V8T" customClass="CameraCaptureVC" customModule="TrafficCondition" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="o9L-np-RRG" customClass="TraficPhotoView" customModule="TrafficCondition" customModuleProvider="target">
+                <viewController storyboardIdentifier="TraficCameraPhotoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3P3-Ft-V8T" customClass="TraficCameraPhotoVC" customModule="TrafficCondition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o9L-np-RRG" customClass="TraficCameraPhotoView" customModule="TrafficCondition" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -93,4 +100,7 @@
             <point key="canvasLocation" x="333.33333333333337" y="-52.232142857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar" width="24" height="24"/>
+    </resources>
 </document>

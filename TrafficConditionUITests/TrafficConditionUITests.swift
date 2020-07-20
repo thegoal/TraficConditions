@@ -2,7 +2,7 @@
 //  TrafficConditionUITests.swift
 //  TrafficConditionUITests
 //
-//  Created by stella on 7/19/20.
+//  Created by Ishaq on 7/19/20.
 //  Copyright © 2020 Ishaq. All rights reserved.
 //
 

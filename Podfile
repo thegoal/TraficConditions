@@ -11,8 +11,7 @@ target 'TrafficCondition' do
   pod 'SDWebImage', '~> 5.0'
   pod 'AlamofireObjectMapper', '~> 5.2'
   pod 'ProgressHUD'
-
-  
+  pod 'DatePickerDialog'
 
   target 'TrafficConditionTests' do
     inherit! :search_paths

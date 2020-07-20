@@ -2,7 +2,7 @@
 //  Location.swift
 //  TrafficCondition
 //
-//  Created by stella on 7/19/20.
+//  Created by Ishaq on 7/19/20.
 //  Copyright © 2020 Ishaq. All rights reserved.
 //
 
@@ -21,11 +21,9 @@ class Location : NSObject, NSCoding, Mappable{
     required init?(map: Map){}
     private override init(){}
 
-    func mapping(map: Map)
-    {
+    func mapping(map: Map) {
         latitude <- map[ResponseStrings.latitude]
         longitude <- map[ResponseStrings.longitude]
-        
     }
 
     /**
