@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4255AE8FE89D913468F6B5AF /* Pods_TrafficConditionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37290E855B41258CF4A89002 /* Pods_TrafficConditionTests.framework */; };
+		5502D22B24C45EE100E65C9B /* APIConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502D22A24C45EE100E65C9B /* APIConstans.swift */; };
+		5502D23324C46E1400E65C9B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502D23224C46E1400E65C9B /* Utilities.swift */; };
+		5502D23524C47A2D00E65C9B /* DataItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502D23424C47A2D00E65C9B /* DataItems.swift */; };
+		554F479F24C4D2DC00AA9FC3 /* TraficCameraPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F479E24C4D2DC00AA9FC3 /* TraficCameraPhotoViewModel.swift */; };
+		5558B4C824C5F86800F5C0F0 /* TraficCameraLocationAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558B4C724C5F86800F5C0F0 /* TraficCameraLocationAPITest.swift */; };
+		558DBC1724C5770800CD4555 /* TraficCameraLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558DBC1624C5770800CD4555 /* TraficCameraLocationService.swift */; };
+		558DBC1924C580DB00CD4555 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558DBC1824C580DB00CD4555 /* AnnotationView.swift */; };
+		55A6DC6724C4C16F00922F40 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6DC6624C4C16F00922F40 /* Annotation.swift */; };
+		55A6DC6A24C4C96500922F40 /* TraficCameraPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6DC6924C4C96500922F40 /* TraficCameraPhotoView.swift */; };
+		55A6DC6C24C4CBD400922F40 /* TraficCameraLocaitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6DC6B24C4CBD400922F40 /* TraficCameraLocaitionsView.swift */; };
+		55E59BA324C43A7D001197E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BA224C43A7D001197E3 /* AppDelegate.swift */; };
+		55E59BA724C43A7D001197E3 /* TraficCamerasLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BA624C43A7D001197E3 /* TraficCamerasLocationVC.swift */; };
+		55E59BAA24C43A7D001197E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55E59BA824C43A7D001197E3 /* Main.storyboard */; };
+		55E59BAC24C43A7E001197E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E59BAB24C43A7E001197E3 /* Assets.xcassets */; };
+		55E59BAF24C43A7E001197E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55E59BAD24C43A7E001197E3 /* LaunchScreen.storyboard */; };
+		55E59BBA24C43A7E001197E3 /* TrafficConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BB924C43A7E001197E3 /* TrafficConditionTests.swift */; };
+		55E59BC524C43A7E001197E3 /* TrafficConditionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BC424C43A7E001197E3 /* TrafficConditionUITests.swift */; };
+		55E59BDA24C43DFE001197E3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BD924C43DFE001197E3 /* BaseViewController.swift */; };
+		55E59BDD24C43EC1001197E3 /* TraficCameraPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BDC24C43EC1001197E3 /* TraficCameraPhotoVC.swift */; };
+		55E59BE124C4406E001197E3 /* TraficCamerasLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BE024C4406E001197E3 /* TraficCamerasLocationViewModel.swift */; };
+		55E59BE724C44964001197E3 /* TraficCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BE624C44964001197E3 /* TraficCamera.swift */; };
+		55E59BE924C45888001197E3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BE824C45888001197E3 /* Location.swift */; };
+		55E59BEB24C4589D001197E3 /* ImageMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BEA24C4589D001197E3 /* ImageMetaData.swift */; };
+		55E59BEE24C459C4001197E3 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E59BED24C459C4001197E3 /* StringConstants.swift */; };
+		8A4C88FD4CF5498D94402485 /* Pods_TrafficCondition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4CCD292467D058C2265F3A /* Pods_TrafficCondition.framework */; };
+		A7B6D27DA40D9B571F20B735 /* Pods_TrafficCondition_TrafficConditionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9D5CCC50377E1497C75DD2 /* Pods_TrafficCondition_TrafficConditionUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55E59BB624C43A7E001197E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E59B9724C43A7D001197E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55E59B9E24C43A7D001197E3;
+			remoteInfo = TrafficCondition;
+		};
+		55E59BC124C43A7E001197E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E59B9724C43A7D001197E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55E59B9E24C43A7D001197E3;
+			remoteInfo = TrafficCondition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		062B181EEB720A2F7B3FC87D /* Pods-TrafficCondition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficCondition.release.xcconfig"; path = "Target Support Files/Pods-TrafficCondition/Pods-TrafficCondition.release.xcconfig"; sourceTree = "<group>"; };
+		1369512A8C4067884FB1030C /* Pods-TrafficCondition-TrafficConditionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficCondition-TrafficConditionUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrafficCondition-TrafficConditionUITests/Pods-TrafficCondition-TrafficConditionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		17F2D6A1BF454ECD7A30B523 /* Pods-TrafficCondition-TrafficConditionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficCondition-TrafficConditionUITests.release.xcconfig"; path = "Target Support Files/Pods-TrafficCondition-TrafficConditionUITests/Pods-TrafficCondition-TrafficConditionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		27BE2A89E32C0672A05B828F /* Pods-TrafficCondition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficCondition.debug.xcconfig"; path = "Target Support Files/Pods-TrafficCondition/Pods-TrafficCondition.debug.xcconfig"; sourceTree = "<group>"; };
+		37290E855B41258CF4A89002 /* Pods_TrafficConditionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrafficConditionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4CCD292467D058C2265F3A /* Pods_TrafficCondition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrafficCondition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5502D22A24C45EE100E65C9B /* APIConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstans.swift; sourceTree = "<group>"; };
+		5502D23224C46E1400E65C9B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5502D23424C47A2D00E65C9B /* DataItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItems.swift; sourceTree = "<group>"; };
+		554F479E24C4D2DC00AA9FC3 /* TraficCameraPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficCameraPhotoViewModel.swift; sourceTree = "<group>"; };
+		5558B4C724C5F86800F5C0F0 /* TraficCameraLocationAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficCameraLocationAPITest.swift; sourceTree = "<group>"; };
+		558DBC1624C5770800CD4555 /* TraficCameraLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficCameraLocationService.swift; sourceTree = "<group>"; };
+		558DBC1824C580DB00CD4555 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		55A6DC6624C4C16F00922F40 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		55A6DC6924C4C96500922F40 /* TraficCameraPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficCameraPhotoView.swift; sourceTree = "<group>"; };
+		55A6DC6B24C4CBD400922F40 /* TraficCameraLocaitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficCameraLocaitionsView.swift; sourceTree = "<group>"; };
+		55E59B9F24C43A7D001197E3 /* TrafficCondition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficCondition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E59BA224C43A7D001197E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55E59BA624C43A7D001197E3 /* TraficCamerasLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficCamerasLocationVC.swift; sourceTree = "<group>"; };
+		55E59BA924C43A7D001197E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55E59BAB24C43A7E001197E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55E59BAE24C43A7E001197E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55E59BB024C43A7E001197E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E59BB524C43A7E001197E3 /* TrafficConditionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficConditionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E59BB924C43A7E001197E3 /* TrafficConditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficConditionTests.swift; sourceTree = "<group>"; };
+		55E59BBB24C43A7E001197E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E59BC024C43A7E001197E3 /* TrafficConditionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficConditionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E59BC424C43A7E001197E3 /* TrafficConditionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficConditionUITests.swift; sourceTree = "<group>"; };
+		55E59BC624C43A7E001197E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E59BD924C43DFE001197E3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		55E59BDC24C43EC1001197E3 /* TraficCameraPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficCameraPhotoVC.swift; sourceTree = "<group>"; };
+		55E59BE024C4406E001197E3 /* TraficCamerasLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficCamerasLocationViewModel.swift; sourceTree = "<group>"; };
+		55E59BE624C44964001197E3 /* TraficCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficCamera.swift; sourceTree = "<group>"; };
+		55E59BE824C45888001197E3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		55E59BEA24C4589D001197E3 /* ImageMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetaData.swift; sourceTree = "<group>"; };
+		55E59BED24C459C4001197E3 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		8F9D5CCC50377E1497C75DD2 /* Pods_TrafficCondition_TrafficConditionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrafficCondition_TrafficConditionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01FB318CB8C21FDA40854F1 /* Pods-TrafficConditionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficConditionTests.debug.xcconfig"; path = "Target Support Files/Pods-TrafficConditionTests/Pods-TrafficConditionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9CFDFF9DA6CED0C4F37D06C /* Pods-TrafficConditionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficConditionTests.release.xcconfig"; path = "Target Support Files/Pods-TrafficConditionTests/Pods-TrafficConditionTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55E59B9C24C43A7D001197E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4C88FD4CF5498D94402485 /* Pods_TrafficCondition.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E59BB224C43A7E001197E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4255AE8FE89D913468F6B5AF /* Pods_TrafficConditionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E59BBD24C43A7E001197E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B6D27DA40D9B571F20B735 /* Pods_TrafficCondition_TrafficConditionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		558DBC1524C576E600CD4555 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				558DBC1624C5770800CD4555 /* TraficCameraLocationService.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		55A6DC6324C4C14900922F40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55A6DC6624C4C16F00922F40 /* Annotation.swift */,
+				558DBC1824C580DB00CD4555 /* AnnotationView.swift */,
+				55A6DC6924C4C96500922F40 /* TraficCameraPhotoView.swift */,
+				55A6DC6B24C4CBD400922F40 /* TraficCameraLocaitionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		55E59B9624C43A7D001197E3 = {
+			isa = PBXGroup;
+			children = (
+				55E59BA124C43A7D001197E3 /* TrafficCondition */,
+				55E59BB824C43A7E001197E3 /* TrafficConditionTests */,
+				55E59BC324C43A7E001197E3 /* TrafficConditionUITests */,
+				55E59BA024C43A7D001197E3 /* Products */,
+				63588E3D2DE22D1BE3D2E2F0 /* Pods */,
+				BA28EDEF553A9DA3B67CE70D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		55E59BA024C43A7D001197E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55E59B9F24C43A7D001197E3 /* TrafficCondition.app */,
+				55E59BB524C43A7E001197E3 /* TrafficConditionTests.xctest */,
+				55E59BC024C43A7E001197E3 /* TrafficConditionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55E59BA124C43A7D001197E3 /* TrafficCondition */ = {
+			isa = PBXGroup;
+			children = (
+				55E59BD624C43B96001197E3 /* Sourcs */,
+				55E59BD524C43B7E001197E3 /* Media */,
+				55E59BD824C43BF3001197E3 /* SupportingFiles */,
+				55E59BD724C43BE6001197E3 /* Storyboards */,
+			);
+			path = TrafficCondition;
+			sourceTree = "<group>";
+		};
+		55E59BB824C43A7E001197E3 /* TrafficConditionTests */ = {
+			isa = PBXGroup;
+			children = (
+				5558B4C724C5F86800F5C0F0 /* TraficCameraLocationAPITest.swift */,
+				55E59BB924C43A7E001197E3 /* TrafficConditionTests.swift */,
+				55E59BBB24C43A7E001197E3 /* Info.plist */,
+			);
+			path = TrafficConditionTests;
+			sourceTree = "<group>";
+		};
+		55E59BC324C43A7E001197E3 /* TrafficConditionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55E59BC424C43A7E001197E3 /* TrafficConditionUITests.swift */,
+				55E59BC624C43A7E001197E3 /* Info.plist */,
+			);
+			path = TrafficConditionUITests;
+			sourceTree = "<group>";
+		};
+		55E59BD224C43AFE001197E3 /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				55E59BD924C43DFE001197E3 /* BaseViewController.swift */,
+				55E59BA624C43A7D001197E3 /* TraficCamerasLocationVC.swift */,
+				55E59BDC24C43EC1001197E3 /* TraficCameraPhotoVC.swift */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		55E59BD324C43B1C001197E3 /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				55E59BE024C4406E001197E3 /* TraficCamerasLocationViewModel.swift */,
+				554F479E24C4D2DC00AA9FC3 /* TraficCameraPhotoViewModel.swift */,
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
+		55E59BD524C43B7E001197E3 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				55E59BAB24C43A7E001197E3 /* Assets.xcassets */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		55E59BD624C43B96001197E3 /* Sourcs */ = {
+			isa = PBXGroup;
+			children = (
+				558DBC1524C576E600CD4555 /* WebServices */,
+				55E59BEC24C4599B001197E3 /* Helper */,
+				55E59BE224C441FB001197E3 /* DataModels */,
+				55E59BD324C43B1C001197E3 /* ModelViews */,
+				55A6DC6324C4C14900922F40 /* Views */,
+				55E59BD224C43AFE001197E3 /* VIewController */,
+			);
+			path = Sourcs;
+			sourceTree = "<group>";
+		};
+		55E59BD724C43BE6001197E3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				55E59BA824C43A7D001197E3 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		55E59BD824C43BF3001197E3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				55E59BA224C43A7D001197E3 /* AppDelegate.swift */,
+				55E59BAD24C43A7E001197E3 /* LaunchScreen.storyboard */,
+				55E59BB024C43A7E001197E3 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		55E59BE224C441FB001197E3 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				5502D23424C47A2D00E65C9B /* DataItems.swift */,
+				55E59BE624C44964001197E3 /* TraficCamera.swift */,
+				55E59BE824C45888001197E3 /* Location.swift */,
+				55E59BEA24C4589D001197E3 /* ImageMetaData.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		55E59BEC24C4599B001197E3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				55E59BED24C459C4001197E3 /* StringConstants.swift */,
+				5502D22A24C45EE100E65C9B /* APIConstans.swift */,
+				5502D23224C46E1400E65C9B /* Utilities.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		63588E3D2DE22D1BE3D2E2F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27BE2A89E32C0672A05B828F /* Pods-TrafficCondition.debug.xcconfig */,
+				062B181EEB720A2F7B3FC87D /* Pods-TrafficCondition.release.xcconfig */,
+				1369512A8C4067884FB1030C /* Pods-TrafficCondition-TrafficConditionUITests.debug.xcconfig */,
+				17F2D6A1BF454ECD7A30B523 /* Pods-TrafficCondition-TrafficConditionUITests.release.xcconfig */,
+				A01FB318CB8C21FDA40854F1 /* Pods-TrafficConditionTests.debug.xcconfig */,
+				C9CFDFF9DA6CED0C4F37D06C /* Pods-TrafficConditionTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA28EDEF553A9DA3B67CE70D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B4CCD292467D058C2265F3A /* Pods_TrafficCondition.framework */,
+				8F9D5CCC50377E1497C75DD2 /* Pods_TrafficCondition_TrafficConditionUITests.framework */,
+				37290E855B41258CF4A89002 /* Pods_TrafficConditionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55E59B9E24C43A7D001197E3 /* TrafficCondition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E59BC924C43A7E001197E3 /* Build configuration list for PBXNativeTarget "TrafficCondition" */;
+			buildPhases = (
+				40FA17CE38FF5FF123973BBC /* [CP] Check Pods Manifest.lock */,
+				55E59B9B24C43A7D001197E3 /* Sources */,
+				55E59B9C24C43A7D001197E3 /* Frameworks */,
+				55E59B9D24C43A7D001197E3 /* Resources */,
+				D71CF39E8284FDEF23F7B3CE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrafficCondition;
+			productName = TrafficCondition;
+			productReference = 55E59B9F24C43A7D001197E3 /* TrafficCondition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55E59BB424C43A7E001197E3 /* TrafficConditionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E59BCC24C43A7E001197E3 /* Build configuration list for PBXNativeTarget "TrafficConditionTests" */;
+			buildPhases = (
+				DBE5E6A146C90701C9262CBE /* [CP] Check Pods Manifest.lock */,
+				55E59BB124C43A7E001197E3 /* Sources */,
+				55E59BB224C43A7E001197E3 /* Frameworks */,
+				55E59BB324C43A7E001197E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55E59BB724C43A7E001197E3 /* PBXTargetDependency */,
+			);
+			name = TrafficConditionTests;
+			productName = TrafficConditionTests;
+			productReference = 55E59BB524C43A7E001197E3 /* TrafficConditionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55E59BBF24C43A7E001197E3 /* TrafficConditionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E59BCF24C43A7E001197E3 /* Build configuration list for PBXNativeTarget "TrafficConditionUITests" */;
+			buildPhases = (
+				3D5FB549A01BF7068A44A3A5 /* [CP] Check Pods Manifest.lock */,
+				55E59BBC24C43A7E001197E3 /* Sources */,
+				55E59BBD24C43A7E001197E3 /* Frameworks */,
+				55E59BBE24C43A7E001197E3 /* Resources */,
+				8E900558107A27C9A3ED39C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55E59BC224C43A7E001197E3 /* PBXTargetDependency */,
+			);
+			name = TrafficConditionUITests;
+			productName = TrafficConditionUITests;
+			productReference = 55E59BC024C43A7E001197E3 /* TrafficConditionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55E59B9724C43A7D001197E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Ishaq;
+				TargetAttributes = {
+					55E59B9E24C43A7D001197E3 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					55E59BB424C43A7E001197E3 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 55E59B9E24C43A7D001197E3;
+					};
+					55E59BBF24C43A7E001197E3 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 55E59B9E24C43A7D001197E3;
+					};
+				};
+			};
+			buildConfigurationList = 55E59B9A24C43A7D001197E3 /* Build configuration list for PBXProject "TrafficCondition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55E59B9624C43A7D001197E3;
+			productRefGroup = 55E59BA024C43A7D001197E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55E59B9E24C43A7D001197E3 /* TrafficCondition */,
+				55E59BB424C43A7E001197E3 /* TrafficConditionTests */,
+				55E59BBF24C43A7E001197E3 /* TrafficConditionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55E59B9D24C43A7D001197E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E59BAF24C43A7E001197E3 /* LaunchScreen.storyboard in Resources */,
+				55E59BAC24C43A7E001197E3 /* Assets.xcassets in Resources */,
+				55E59BAA24C43A7D001197E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E59BB324C43A7E001197E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E59BBE24C43A7E001197E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D5FB549A01BF7068A44A3A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrafficCondition-TrafficConditionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40FA17CE38FF5FF123973BBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrafficCondition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E900558107A27C9A3ED39C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrafficCondition-TrafficConditionUITests/Pods-TrafficCondition-TrafficConditionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrafficCondition-TrafficConditionUITests/Pods-TrafficCondition-TrafficConditionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrafficCondition-TrafficConditionUITests/Pods-TrafficCondition-TrafficConditionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D71CF39E8284FDEF23F7B3CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrafficCondition/Pods-TrafficCondition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrafficCondition/Pods-TrafficCondition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrafficCondition/Pods-TrafficCondition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE5E6A146C90701C9262CBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrafficConditionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55E59B9B24C43A7D001197E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5502D22B24C45EE100E65C9B /* APIConstans.swift in Sources */,
+				558DBC1924C580DB00CD4555 /* AnnotationView.swift in Sources */,
+				55E59BE724C44964001197E3 /* TraficCamera.swift in Sources */,
+				5502D23324C46E1400E65C9B /* Utilities.swift in Sources */,
+				55E59BEE24C459C4001197E3 /* StringConstants.swift in Sources */,
+				554F479F24C4D2DC00AA9FC3 /* TraficCameraPhotoViewModel.swift in Sources */,
+				55A6DC6724C4C16F00922F40 /* Annotation.swift in Sources */,
+				5502D23524C47A2D00E65C9B /* DataItems.swift in Sources */,
+				55A6DC6C24C4CBD400922F40 /* TraficCameraLocaitionsView.swift in Sources */,
+				55E59BDD24C43EC1001197E3 /* TraficCameraPhotoVC.swift in Sources */,
+				55E59BE924C45888001197E3 /* Location.swift in Sources */,
+				55E59BA724C43A7D001197E3 /* TraficCamerasLocationVC.swift in Sources */,
+				55A6DC6A24C4C96500922F40 /* TraficCameraPhotoView.swift in Sources */,
+				55E59BA324C43A7D001197E3 /* AppDelegate.swift in Sources */,
+				55E59BDA24C43DFE001197E3 /* BaseViewController.swift in Sources */,
+				558DBC1724C5770800CD4555 /* TraficCameraLocationService.swift in Sources */,
+				55E59BEB24C4589D001197E3 /* ImageMetaData.swift in Sources */,
+				55E59BE124C4406E001197E3 /* TraficCamerasLocationViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E59BB124C43A7E001197E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E59BBA24C43A7E001197E3 /* TrafficConditionTests.swift in Sources */,
+				5558B4C824C5F86800F5C0F0 /* TraficCameraLocationAPITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E59BBC24C43A7E001197E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E59BC524C43A7E001197E3 /* TrafficConditionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55E59BB724C43A7E001197E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55E59B9E24C43A7D001197E3 /* TrafficCondition */;
+			targetProxy = 55E59BB624C43A7E001197E3 /* PBXContainerItemProxy */;
+		};
+		55E59BC224C43A7E001197E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55E59B9E24C43A7D001197E3 /* TrafficCondition */;
+			targetProxy = 55E59BC124C43A7E001197E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55E59BA824C43A7D001197E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55E59BA924C43A7D001197E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55E59BAD24C43A7E001197E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55E59BAE24C43A7E001197E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55E59BC724C43A7E001197E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55E59BC824C43A7E001197E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55E59BCA24C43A7E001197E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27BE2A89E32C0672A05B828F /* Pods-TrafficCondition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TrafficCondition/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuhlkea.traficCondition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55E59BCB24C43A7E001197E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 062B181EEB720A2F7B3FC87D /* Pods-TrafficCondition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TrafficCondition/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuhlkea.traficCondition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55E59BCD24C43A7E001197E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01FB318CB8C21FDA40854F1 /* Pods-TrafficConditionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TrafficConditionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishaq.trafficcondition.TrafficConditionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficCondition.app/TrafficCondition";
+			};
+			name = Debug;
+		};
+		55E59BCE24C43A7E001197E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9CFDFF9DA6CED0C4F37D06C /* Pods-TrafficConditionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TrafficConditionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishaq.trafficcondition.TrafficConditionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficCondition.app/TrafficCondition";
+			};
+			name = Release;
+		};
+		55E59BD024C43A7E001197E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1369512A8C4067884FB1030C /* Pods-TrafficCondition-TrafficConditionUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TrafficConditionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishaq.trafficcondition.TrafficConditionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrafficCondition;
+			};
+			name = Debug;
+		};
+		55E59BD124C43A7E001197E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F2D6A1BF454ECD7A30B523 /* Pods-TrafficCondition-TrafficConditionUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TrafficConditionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishaq.trafficcondition.TrafficConditionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrafficCondition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55E59B9A24C43A7D001197E3 /* Build configuration list for PBXProject "TrafficCondition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E59BC724C43A7E001197E3 /* Debug */,
+				55E59BC824C43A7E001197E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E59BC924C43A7E001197E3 /* Build configuration list for PBXNativeTarget "TrafficCondition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E59BCA24C43A7E001197E3 /* Debug */,
+				55E59BCB24C43A7E001197E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E59BCC24C43A7E001197E3 /* Build configuration list for PBXNativeTarget "TrafficConditionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E59BCD24C43A7E001197E3 /* Debug */,
+				55E59BCE24C43A7E001197E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E59BCF24C43A7E001197E3 /* Build configuration list for PBXNativeTarget "TrafficConditionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E59BD024C43A7E001197E3 /* Debug */,
+				55E59BD124C43A7E001197E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55E59B9724C43A7D001197E3 /* Project object */;
+}
