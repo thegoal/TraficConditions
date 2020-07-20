@@ -27,14 +27,14 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CamerasLocationVC" customModule="TrafficCondition" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="TraficCameraLocaitionsView" customModule="TrafficCondition" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tyo-0x-zgf">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vJZ-GZ-nQJ"/>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="LUj-tQ-Mvy"/>
                                 </connections>
                             </mapView>
                         </subviews>
@@ -46,11 +46,17 @@
                             <constraint firstItem="Tyo-0x-zgf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qMv-R2-dQn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="mapView" destination="Tyo-0x-zgf" id="snn-Dv-CqX"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="dhp-2U-6fx"/>
-                    <connections>
-                        <outlet property="mapView" destination="Tyo-0x-zgf" id="yxV-RD-Efu"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="dhp-2U-6fx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="biZ-M7-sMP">
+                            <connections>
+                                <action selector="refreshTraficCameraLoactions" destination="BYZ-38-t0r" id="JcS-6F-bg0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

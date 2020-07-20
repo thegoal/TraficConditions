@@ -6,51 +6,43 @@
 //  Copyright © 2020 Ishaq. All rights reserved.
 //
 
+import MapKit
 import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
+typealias TraficCameraLocationResponseSucess = (_ success:Bool, _ error:String) -> Void
 
-typealias CompletionHandler = (_ success:Bool , _ responseObject:Array<TraficCamera>) -> Void
 
-class CamerasLocationViewModel: NSObject {
+class CamerasLocationViewModel {
     
+    var traficCameraLocationsView:TraficCameraLocaitionsView?
     var traficCameras:[TraficCamera] = []
     
-
-    func loadTraficCameraFeedForTimeStamp(timeStamp:String , completion: @escaping CompletionHandler ) {
-                
-        Alamofire.request(APIConstants().cameraLocationURL(timeStamp: timeStamp) as URL, method: .get).responseArray(keyPath: "items") { (response:DataResponse<[DataItems]>) in
-            
-             if response.error == nil {
-                DispatchQueue.main.async {
-                    if let dataItems = response.result.value {
-                        if dataItems.count > 0  {
-                            completion(true,dataItems[0].cameras! )
-                        }
-                    }
-                }
-             }else {
-                 DispatchQueue.main.async {
-                     completion(false, [] )
-                 }
-             }
+    func addAnnotationsToMapView() {
+        var annotatonsArray:[Annotation] = []
+        for (index, traficCamera) in self.traficCameras.enumerated() {
+            let coordinate = CLLocationCoordinate2D(latitude: traficCamera.location!.latitude!,
+                                                              longitude: traficCamera.location!.longitude!)
+                   let annotation = Annotation()
+                   annotation.coordinate = coordinate
+                   annotation.title = "Camera Location"
+                   annotation.index = index
+                   annotatonsArray.append(annotation)
         }
-        
+        traficCameraLocationsView?.mapView?.showAnnotations(annotatonsArray, animated: true)
+    }
+
+    func loadTraficCameraFeed(traficCameraLocationResponseSucess: @escaping TraficCameraLocationResponseSucess ) {
+        TraficCameraLocationService().loadTraficCameraFeedForTimeStamp(timeStamp: Utilities().generateCurrentTimeStamp())
+        {( success , responseObject) -> Void in
+            if success {
+                    self.traficCameras = responseObject
+                    self.addAnnotationsToMapView()
+                    traficCameraLocationResponseSucess(true , "")
+            }else{
+                traficCameraLocationResponseSucess(false , "Something went wrong, Please try again latter!")
+            }
+        }
     }
 }
-
-
-//Alamofire.request(URL).responseObject(keyPath: "data") { (response: DataResponse<WeatherResponse>) in
-//    expectation.fulfill()
-//
-//    let weatherResponse = response.result.value
-//    print(weatherResponse?.location)
-//
-//    if let threeDayForecast = weatherResponse?.threeDayForecast {
-//        for forecast in threeDayForecast {
-//            print(forecast.day)
-//            print(forecast.temperature)
-//        }
-//    }
-//}
