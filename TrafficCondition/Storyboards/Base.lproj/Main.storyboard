@@ -57,7 +57,7 @@
                                     <action selector="refreshTraficCameraLoactions" destination="8bC-Xf-vdC" id="SkT-fa-75c"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="calendar" style="plain" id="aLh-r1-0Jf">
+                            <barButtonItem image="calendar" id="aLh-r1-0Jf">
                                 <connections>
                                     <action selector="showDatePicker" destination="8bC-Xf-vdC" id="gGA-NR-WqN"/>
                                 </connections>
