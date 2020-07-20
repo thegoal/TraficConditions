@@ -1,3 +1,7 @@
 # TraficConditions
 
-Move to TraficConditions and run pod install.
+Clone Project.
+Open terminal.
+Move to TraficConditions folder.
+Run "pod install".
+
